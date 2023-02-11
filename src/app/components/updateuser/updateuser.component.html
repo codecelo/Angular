@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wcpfth=device-wcpfth, initial-scale=1.0">
+    <title>Add pacientes</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-flucpf">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" cpf="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!--Main Content-->
+    <div class="my-5">
+      <div class="mx-auto w-25 " style="max-wcpfth:100%;">
+        <h2 class="text-center mb-3">Update pacientes</h2>
+        <form  [formGroup]="form" (ngSubmit)="submit()" >
+
+          <!--Email-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input cpf="email"  formControlName="email" type="email" name="email" class="form-control" placeholder="email" required>
+            </div>
+          </div>
+
+
+          <!--cpf-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="cpf" class="form-label">Phone Number</label>
+              <input cpf="cpf" type="text" formControlName="cpf" name="cpf"class="form-control" placeholder="Phone Number" required>
+            </div>
+          </div>
+
+
+          <!--cpf-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="procedimento" class="form-label">procedimento</label>
+              <textarea cpf="procedimento" formControlName="procedimento" type="text" name="procedimento"  class="form-control" placeholder="New Delhi, India" rows="3" required></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button [disabled]="!form.valid" class="btn btn-primary w-100" type="submit" value="Submit">Button</button>
+            </div>
+          </div>
+
+          <div>
+
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+</body>
+</html>
